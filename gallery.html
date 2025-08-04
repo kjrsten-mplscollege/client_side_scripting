@@ -9,27 +9,50 @@
   </head>
 
 <style>
-.dragons a {
-    max-width: 240px;
+body {
+    font-family: sans-serif;
+    margin: 20px auto;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dragons {
+    padding: 20px;
+    background-color: lavender;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dragons a img {
+    max-width: 200px;
 }
 
 </style>
 
   <body>
-    
-    <!-- Group 1 -->
-    <div class="spotlight-group dragons">
-        <a class="spotlight" href="images/dragon1.jpg">
-            <img src="images/dragon1-thumb.jpg">
-        </a>
-        <a class="spotlight" href="images/dragon2.jpg">
-            <img src="images/dragon2-thumb.jpg">
-        </a>
-        <a class="spotlight" href="images/dragon3.jpg">
-            <img src="images/dragon3-thumb.jpg">
-        </a>
-    </div>
-    
+    <section>
+        <h2>Spotlight Gallery demo</h2>
+        <p>Code from: <a href="https://github.com/nextapps-de/spotlight">https://github.com/nextapps-de/spotlight</a></p>
+        <br>
+        <!-- Group 1 -->
+        <div class="spotlight-group dragons" data-title="Dragons!">
+            <a class="spotlight" href="images/dragon1.jpg" data-title="Title: Dragon One, by Illustrator" data-description="This is the description">
+                <img src="images/dragon1-thumb.jpg">
+            </a>
+            <a class="spotlight" href="images/dragon2.jpg">
+                <img src="images/dragon2-thumb.jpg" alt="This is alt text">
+            </a>
+            <a class="spotlight" href="images/dragon3.jpg" data-title="false">
+                <img src="images/dragon3-thumb.jpg" alt="This is alt text">
+            </a>
+        </div>
+    </section>
+
     <script src="js/spotlight.min.js"></script>
   </body>
 
