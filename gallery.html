@@ -32,6 +32,15 @@ section {
     max-width: 200px;
 }
 
+#spotlight {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.spl-footer {
+  font-size: 16px;
+}
+.spl-fullscreen {
+  display: none !important;
+}
 </style>
 
   <body>
@@ -40,20 +49,34 @@ section {
         <p>Code from: <a href="https://github.com/nextapps-de/spotlight">https://github.com/nextapps-de/spotlight</a></p>
         <br>
         <!-- Group 1 -->
-        <div class="spotlight-group dragons" data-title="Dragons!">
-            <a class="spotlight" href="images/dragon1.jpg" data-title="Title: Dragon One, by Illustrator" data-description="This is the description">
+        <div class="spotlight-group dragons" 
+            data-fullscreen="false"
+            data-autofit="false"
+            data-infinite="true"
+            data-animation="fade"
+            data-autohide="all"
+            >
+            <a class="spotlight" href="images/dragon1.jpg"             data-title="Dragon One, Adobe Illustrator, 2023"
+            data-description="This is the description, a longer piece of text that tells us more about the image.">
                 <img src="images/dragon1-thumb.jpg">
             </a>
-            <a class="spotlight" href="images/dragon2.jpg">
-                <img src="images/dragon2-thumb.jpg" alt="This is alt text">
+            <a class="spotlight" href="images/dragon2.jpg"
+            data-title="Dragon Two, Adobe Illustrator, 2023">
+                <img src="images/dragon2-thumb.jpg" 
+                alt="This is alt text">
             </a>
-            <a class="spotlight" href="images/dragon3.jpg" data-title="false">
-                <img src="images/dragon3-thumb.jpg" alt="This is alt text">
+            <a class="spotlight" href="images/dragon3.jpg"
+            data-title="Dragon Three, Adobe Illustrator, 2023">
+                <img src="images/dragon3-thumb.jpg" 
+                alt="This is alt text">
             </a>
         </div>
     </section>
 
     <script src="js/spotlight.min.js"></script>
+    <script>
+
+    </script>
   </body>
 
 </html>
